@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("../images/bg.png");
+}
+
+.ImageExp {
+    width: 350px;
+    height: 350px;
+}
+
+#first-Score {
+    background-color: green;
+    width: 250px;
+    height: 150px;
+}
+
+#button-1 {
+    background: url("../images/1.jpg") no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+#button-2 {
+    background: url("../images/2.jpg") no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+#button-3 {
+    background: url("../images/3.jpg") no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+#button-4 {
+    background: url("../images/4.jpg") no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+#Title-total {
+    background-color: green;
+    width: 250px;
+}
+
+#TotalNumber {
+    background-color: green;
+    width: 250px;
+    height: 150px;
+}
