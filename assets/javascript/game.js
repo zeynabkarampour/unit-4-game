@@ -11,6 +11,7 @@ $(document).ready(function () {
     var startRange = 1;
     var endRange = 100;
     var tally = 0;
+    var Gameover = false;
     var generateRandomNumber = function (startRange, endRange) {
         return Math.floor(Math.random() * ((endRange - startRange) + 1) + startRange);
     }
@@ -22,6 +23,12 @@ $(document).ready(function () {
     $("#button-4").attr("data-value", generateRandomNumber(1, 5));
 
     $('#first-Number').text(RandomNumber);
+    $('.btn').on('click', function () {
+        if (Gameover === true) {
+            $('#gameResult').text("");
+            Gameover = false;
+        }
+    })
 
     $('#button-1').on('click', function () {
         var CrystalNumber = $(this).data('value');
@@ -31,10 +38,12 @@ $(document).ready(function () {
         $('#TotalNumber').text(tally)
         if (tally === RandomNumber) {
             wins = wins + 1;
+            $('#gameResult').text("YOU WON!");
             gameEnd();
         }
         if (tally > RandomNumber) {
             lost = lost + 1;
+            $('#gameResult').text("YOU LOST!");
             gameEnd();
         }
         updateScores();
@@ -49,10 +58,12 @@ $(document).ready(function () {
         $('#TotalNumber').text(tally)
         if (tally === RandomNumber) {
             wins = wins + 1;
+            $('#gameResult').text("YOU WON!");
             gameEnd();
         }
         if (tally > RandomNumber) {
             lost = lost + 1;
+            $('#gameResult').text("YOU LOST!");
             gameEnd();
         }
         updateScores();
@@ -67,10 +78,12 @@ $(document).ready(function () {
         $('#TotalNumber').text(tally)
         if (tally === RandomNumber) {
             wins = wins + 1;
+            $('#gameResult').text("YOU WON!");
             gameEnd();
         }
         if (tally > RandomNumber) {
             lost = lost + 1;
+            $('#gameResult').text("YOU LOST!");
             gameEnd();
 
         }
@@ -88,10 +101,12 @@ $(document).ready(function () {
         $('#TotalNumber').text(tally)
         if (tally === RandomNumber) {
             wins = wins + 1;
+            $('#gameResult').text("YOU WON!");
             gameEnd();
         }
         if (tally > RandomNumber) {
             lost = lost + 1;
+            $('#gameResult').text("YOU LOST!");
             gameEnd();
         }
         updateScores();
@@ -104,8 +119,11 @@ $(document).ready(function () {
 
     function gameEnd() {
         tally = 0;
+        Gameover = true;
         RandomNumber = generateRandomNumber(1, 100);
+
         $('#first-Number').text(RandomNumber);
+
         $('#TotalNumber').text(tally)
     }
 

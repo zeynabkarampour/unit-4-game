@@ -19,24 +19,28 @@
 
 #button-1 {
     background: url("../images/1.jpg") no-repeat;
+    background-size: 90px 90px;
     width: 90px;
     height: 90px;
 }
 
 #button-2 {
     background: url("../images/2.jpg") no-repeat;
+    background-size: 90px 90px;
     width: 90px;
     height: 90px;
 }
 
 #button-3 {
     background: url("../images/3.jpg") no-repeat;
+    background-size: 90px 90px;
     width: 90px;
     height: 90px;
 }
 
 #button-4 {
     background: url("../images/4.jpg") no-repeat;
+    background-size: 90px 90px;
     width: 90px;
     height: 90px;
 }
@@ -49,5 +53,41 @@
 #TotalNumber {
     background-color: green;
     width: 250px;
-    height: 150px;
+    height: 110px;
+}
+
+#first-Number {
+    background-color: green;
+    width: 250px;
+    height: 110px;
+}
+
+#ChrystalsCollector {
+    background: orangered;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#WinsNumber {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+}
+
+#LossesNumber {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+}
+
+.col {
+    flex-grow: 0;
 }
